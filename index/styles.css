@@ -1,0 +1,60 @@
+/* Estilos gerais */
+html {
+    height: 100%; /* Garante que o html ocupe toda a altura da tela */
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    margin: 0;
+    min-height: 100%; /* Garante que o body ocupe toda a altura da tela */
+    background: linear-gradient(to bottom right, #ff0080, #ff8000); /* Degradê diagonal */
+}
+
+/* Seção principal */
+.hero {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+.about {
+    padding: 30px;
+    text-align: center;
+}
+
+.presentes-link {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    padding: 15px 30px;
+    background-color: #00ffff; /* Azul turquesa */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 10; /* Garante que o link fique acima dos outros elementos */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Gradiente arco-íris */
+    background-size: 200% 100%; /* Tamanho do gradiente */
+    animation: jump 1s infinite, rainbowSlide 5s ease infinite; /* Ambas as animações */
+}
+
+/* Animação de pulo */
+@keyframes jump {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -10px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+/* Animação do gradiente */
+@keyframes rainbowSlide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
